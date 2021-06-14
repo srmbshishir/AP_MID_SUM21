@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@model List<Lecture5.Models.Product>
+<div class="container">
+    <table class="table table-condensed">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Credit</th>
+            <th>Cgpa</th>
+            <th>Dob</th>
+            <th>Dept_id</th>
+        </tr>
+        @foreach (var product in @Model)
+        {
+    <tr>
+        <td>@product.Id</td>
+        <td>@product.Name</td>
+        <td>@product.Credit</td>
+        <td>@product.Cgpa</td>
+        <td>@product.Dob</td>
+        <td>@product.Dept_id</td>
+        <td><a class="btn btn-success" href="/Product/Edit/@product.Id">Edit</a></td>
+        <td><a class="btn btn-danger" href="/Product/Delete/@product.Id">Delete</a></td>
+    </tr>
+        }
+
+    </table>
+</div>

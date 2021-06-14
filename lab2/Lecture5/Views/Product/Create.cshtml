@@ -1,0 +1,23 @@
+﻿@model Lecture5.Models.Product
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+<div>
+    <form action="/Product/Create" method="post">
+        <input type="text" name="Id" class="form-control" placeholder="Id">
+        @Html.ValidationMessageFor(model => model.Id, "", new { @class = "text-danger" })
+        <input type="text" name="Name" class="form-control" placeholder="Name">
+        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+        <input type="text" name="Credit" class="form-control" placeholder="Credit">
+        @Html.ValidationMessageFor(model => model.Credit, "", new { @class = "text-danger" })
+        <input type="text" name="Cgpa" class="form-control" placeholder="Cgpa">
+        @Html.ValidationMessageFor(model => model.Cgpa, "", new { @class = "text-danger" })
+        <input type="date" name="Dob" class="form-control" placeholder="dob">
+        @Html.ValidationMessageFor(model => model.Dob, "", new { @class = "text-danger" })
+        <input type="text" name="Dept_id" class="form-control" placeholder="dept_id">
+        @Html.ValidationMessageFor(model => model.Dept_id, "", new { @class = "text-danger" })
+        <input type="submit" class="btn btn-block" value="Add" />
+    </form>
+</div>

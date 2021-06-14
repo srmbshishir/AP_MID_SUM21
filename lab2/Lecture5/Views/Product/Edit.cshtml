@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Edit";
+}
+@model Lecture5.Models.Product
+<h2>Edit</h2>
+<div>
+    <form action="" method="post">
+        <input type="hidden" name="Id" value="@Model.Id">
+        <input type="text" name="Name" value="@Model.Name" class="form-control" placeholder="name..">
+        <input type="text" name="Credit" value="@Model.Credit" class="form-control" placeholder="Crdit..">
+        <input type="text" name="Cgpa" value="@Model.Cgpa" class="form-control" placeholder="Cgpa..">
+        <input type="text" name="Dob" value="@Model.Dob" class="form-control" placeholder="Dob..">
+        <input type="text" name="Dept_id" value="@Model.Dept_id" class="form-control" placeholder="Dept_id..">
+        <input type="submit" class="btn btn-block" value="Edit" />
+    </form>
+</div>

@@ -92,7 +92,7 @@ namespace Lecture5.Models.Database
         }
         public int Validate(Admin a)
         {
-            string query = $"Select count(*) from Student where username = '{a.Username}' and password = '{a.Password}'";
+            string query = $"Select count(*) from Admin where username = '{a.Username}' and password = '{a.Password}'";
             conn.Open();
             SqlCommand cmd = new SqlCommand(query, conn);
             cmd.ExecuteNonQuery();

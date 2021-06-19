@@ -90,5 +90,15 @@ namespace Lecture5.Models.Database
             cmd.ExecuteNonQuery();
             conn.Close();
         }
+        public int Validate(Admin a)
+        {
+            string query = $"Select count(*) from Student where username = '{a.Username}' and password = '{a.Password}'";
+            conn.Open();
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.ExecuteNonQuery();
+            int temp = Convert.ToInt32(cmd.ExecuteScalar().ToString());
+            conn.Close();
+            return temp;
+        }
     }
 }

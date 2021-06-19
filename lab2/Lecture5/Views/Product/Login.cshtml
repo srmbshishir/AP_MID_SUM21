@@ -5,14 +5,15 @@
 
 <h2>Login</h2>
 
-@model University.Models.Admin
-<h2>LOGIN</h2>
-<h2>for login, use admin admin as username and password respectively</h2>
+@model Lecture5.Models.Admin
+
 <form action="/Home/Index" method="post">
+    <h3>Username :</h3>
     <input class="form-control" type="text" name="Username" value="" />
     @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+    <h3>Password :</h3>
     <input class="form-control" type="password" name="Password" value="" />
     @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
-    <input class="form-control" type="submit" name="loginButton" value="Login" />
+    <input class="btn btn-success" type="submit" name="loginButton" value="Login" />
 </form>
 <span>@TempData["ErrorMessage"]</span>

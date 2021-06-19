@@ -10,6 +10,28 @@ namespace Lecture5.Controllers
 {
     public class ProductController : Controller
     {
+        public ActionResult Login()
+        {
+            Admin a = new Admin();
+            return View(a);
+        }
+
+        [HttpPost]
+        public ActionResult Login(Admin a)
+        {
+            Database db = new Database();
+            int x = db.Products.Validate(a);
+
+            if (x == 1)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "Incorrect Username/Password";
+                return View();
+            }
+        }
         public ActionResult Index()
         {
             Database db = new Database();

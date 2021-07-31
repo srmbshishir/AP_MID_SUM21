@@ -1,0 +1,16 @@
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\BLL\bin\Debug\BLL.dll
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\BLL\bin\Debug\BLL.pdb
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\BLL\bin\Debug\BEL.dll
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\BLL\bin\Debug\DAL.dll
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\BLL\bin\Debug\EntityFramework.dll
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\BLL\bin\Debug\BEL.pdb
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\BLL\bin\Debug\DAL.pdb
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\BLL\bin\Debug\DAL.dll.config
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\BLL\bin\Debug\EntityFramework.xml
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\BLL\obj\Debug\BLL.csproj.CopyComplete
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\BLL\obj\Debug\BLL.dll
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\BLL\obj\Debug\BLL.pdb
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\BLL\bin\Debug\AutoMapper.dll
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\BLL\bin\Debug\AutoMapper.xml

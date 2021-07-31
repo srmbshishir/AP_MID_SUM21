@@ -1,0 +1,12 @@
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\DAL\bin\Debug\DAL.dll.config
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\DAL\bin\Debug\DAL.dll
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\DAL\bin\Debug\DAL.pdb
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\DAL\bin\Debug\EntityFramework.dll
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\DAL\bin\Debug\EntityFramework.SqlServer.dll
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\DAL\bin\Debug\EntityFramework.xml
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\DAL\bin\Debug\EntityFramework.SqlServer.xml
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\DAL\obj\Debug\DAL.csproj.CopyComplete
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\DAL\obj\Debug\DAL.dll
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\DAL\obj\Debug\DAL.pdb

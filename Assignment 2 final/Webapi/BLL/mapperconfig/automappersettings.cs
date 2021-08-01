@@ -13,7 +13,7 @@ namespace BLL.mapperconfig
     {
         public automappersettings()
         {
-            CreateMap<CategoryModel, category>().ForMember(e => e.id, d => d.Ignore());
+            CreateMap<CategoryModel, category>();
         }
     }
 }

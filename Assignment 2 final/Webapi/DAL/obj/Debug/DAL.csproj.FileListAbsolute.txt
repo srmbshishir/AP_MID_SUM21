@@ -10,3 +10,5 @@ J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\DAL\obj\Debug\DA
 J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\DAL\obj\Debug\DAL.csproj.CopyComplete
 J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\DAL\obj\Debug\DAL.dll
 J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\DAL\obj\Debug\DAL.pdb
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\DAL\bin\Debug\AutoMapper.dll
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\DAL\bin\Debug\AutoMapper.xml

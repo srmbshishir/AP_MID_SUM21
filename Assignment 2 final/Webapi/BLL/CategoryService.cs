@@ -21,9 +21,9 @@ namespace BLL
         }
         public static void AddDepartment(CategoryModel dept)
         {
-            var d = AutoMapper.Mapper.Map<CategoryModel, category>(dept);
+            var data = AutoMapper.Mapper.Map<CategoryModel, category>(dept);
             //var d = new Department() { Id = dept.Id, Name = dept.Name };
-            CategoryRepo.AddDepartment(d);
+            CategoryRepo.AddDepartment(data);
         }
     }
 }

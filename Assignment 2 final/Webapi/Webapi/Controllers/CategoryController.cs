@@ -17,5 +17,12 @@ namespace Webapi.Controllers
         {
             return CategoryService.GetCategoryList();
         }
+
+        [Route("api/Category/Add")]
+        [HttpPost]
+        public void Add(CategoryModel dept)
+        {
+            CategoryService.AddDepartment(dept);
+        }
     }
 }

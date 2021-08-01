@@ -18,5 +18,10 @@ namespace DAL
         {
             return context.categories.ToList();
         }
+        public static void AddDepartment(category d)
+        {
+            context.categories.Add(d);
+            context.SaveChanges();
+        }
     }
 }

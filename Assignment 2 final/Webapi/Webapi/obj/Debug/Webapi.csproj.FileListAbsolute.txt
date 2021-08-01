@@ -78,3 +78,6 @@ J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\Webapi\bin\AutoM
 J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\Webapi\bin\EntityFramework.xml
 J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\Webapi\bin\EntityFramework.SqlServer.dll
 J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\Webapi\bin\EntityFramework.SqlServer.xml
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\Webapi\bin\System.Web.Cors.dll
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\Webapi\bin\System.Web.Http.Cors.dll
+J:\atp2 final assignment\AP_MID_SUM21\Assignment 2 final\Webapi\Webapi\bin\System.Web.Http.Cors.xml

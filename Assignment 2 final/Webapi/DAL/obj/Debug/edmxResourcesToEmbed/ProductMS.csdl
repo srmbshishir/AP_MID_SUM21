@@ -25,6 +25,7 @@
     <Property Name="updated_by" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
     <Property Name="deleted_by" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
     <NavigationProperty Name="category" Relationship="Self.FK_product_cateogry" FromRole="product" ToRole="categories" />
+    <NavigationProperty Name="carts" Relationship="ATP2_AssignmentModel.FK_cart_product" FromRole="product" ToRole="cart" />
   </EntityType>
   <EntityType Name="sysdiagram">
     <Key>
@@ -56,5 +57,63 @@
       <End Role="categories" EntitySet="categories" />
       <End Role="product" EntitySet="products" />
     </AssociationSet>
+    <EntitySet Name="carts" EntityType="ATP2_AssignmentModel.cart" />
+    <EntitySet Name="Orders" EntityType="ATP2_AssignmentModel.Order" />
+    <AssociationSet Name="FK_cart_Order1" Association="ATP2_AssignmentModel.FK_cart_Order1">
+      <End Role="Order" EntitySet="Orders" />
+      <End Role="cart" EntitySet="carts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_cart_product" Association="ATP2_AssignmentModel.FK_cart_product">
+      <End Role="product" EntitySet="products" />
+      <End Role="cart" EntitySet="carts" />
+    </AssociationSet>
   </EntityContainer>
+  <EntityType Name="cart">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="order_id" Type="Int32" Nullable="false" />
+    <Property Name="product_id" Type="Int32" Nullable="false" />
+    <Property Name="product_name" Type="String" Nullable="false" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="quanitity" Type="Decimal" Nullable="false" />
+    <Property Name="price" Type="String" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Order" Relationship="ATP2_AssignmentModel.FK_cart_Order1" FromRole="cart" ToRole="Order" />
+    <NavigationProperty Name="product" Relationship="ATP2_AssignmentModel.FK_cart_product" FromRole="cart" ToRole="product" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="total_amount" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="date" Type="DateTime" Precision="0" />
+    <Property Name="time" Type="Time" Precision="7" />
+    <Property Name="status" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="carts" Relationship="ATP2_AssignmentModel.FK_cart_Order1" FromRole="Order" ToRole="cart" />
+  </EntityType>
+  <Association Name="FK_cart_Order1">
+    <End Type="ATP2_AssignmentModel.Order" Role="Order" Multiplicity="1" />
+    <End Type="ATP2_AssignmentModel.cart" Role="cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="cart">
+        <PropertyRef Name="order_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_cart_product">
+    <End Type="ATP2_AssignmentModel.product" Role="product" Multiplicity="1" />
+    <End Type="ATP2_AssignmentModel.cart" Role="cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="product">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="cart">
+        <PropertyRef Name="product_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

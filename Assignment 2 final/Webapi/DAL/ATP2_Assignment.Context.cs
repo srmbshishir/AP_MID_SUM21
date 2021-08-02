@@ -25,7 +25,9 @@ namespace DAL
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<cart> carts { get; set; }
         public virtual DbSet<category> categories { get; set; }
+        public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<product> products { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
     }

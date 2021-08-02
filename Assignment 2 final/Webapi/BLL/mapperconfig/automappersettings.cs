@@ -14,6 +14,7 @@ namespace BLL.mapperconfig
         public automappersettings()
         {
             CreateMap<CategoryModel, category>();
+            CreateMap<ProductModel, product>();
         }
     }
 }

@@ -56,65 +56,65 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ATP2_Assignment.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ATP2_Assignment.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ATP2_Assignment.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ATP2_Assignment.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ATP2_Assignment.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ATP2_Assignment.edmx</DependentUpon>
-    </Compile>
     <Compile Include="cart.cs">
-      <DependentUpon>ATP2_Assignment.tt</DependentUpon>
+      <DependentUpon>ProductMS.tt</DependentUpon>
     </Compile>
     <Compile Include="category.cs">
-      <DependentUpon>ATP2_Assignment.tt</DependentUpon>
+      <DependentUpon>ProductMS.tt</DependentUpon>
     </Compile>
     <Compile Include="CategoryRepo.cs" />
     <Compile Include="Order.cs">
-      <DependentUpon>ATP2_Assignment.tt</DependentUpon>
+      <DependentUpon>ProductMS.tt</DependentUpon>
     </Compile>
     <Compile Include="OrderRepo.cs" />
     <Compile Include="product.cs">
-      <DependentUpon>ATP2_Assignment.tt</DependentUpon>
+      <DependentUpon>ProductMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductMS.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductMS.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductMS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductMS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductMS.edmx</DependentUpon>
     </Compile>
     <Compile Include="ProductRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sysdiagram.cs">
-      <DependentUpon>ATP2_Assignment.tt</DependentUpon>
+      <DependentUpon>ProductMS.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="ATP2_Assignment.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ATP2_Assignment.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="ATP2_Assignment.edmx.diagram">
-      <DependentUpon>ATP2_Assignment.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
+    <EntityDeploy Include="ProductMS.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ProductMS.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ProductMS.edmx.diagram">
+      <DependentUpon>ProductMS.edmx</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ATP2_Assignment.Context.tt">
+    <Content Include="ProductMS.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ATP2_Assignment.edmx</DependentUpon>
-      <LastGenOutput>ATP2_Assignment.Context.cs</LastGenOutput>
+      <DependentUpon>ProductMS.edmx</DependentUpon>
+      <LastGenOutput>ProductMS.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="ATP2_Assignment.tt">
+    <Content Include="ProductMS.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ATP2_Assignment.edmx</DependentUpon>
-      <LastGenOutput>ATP2_Assignment.cs</LastGenOutput>
+      <DependentUpon>ProductMS.edmx</DependentUpon>
+      <LastGenOutput>ProductMS.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
